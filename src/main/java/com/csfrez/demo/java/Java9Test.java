@@ -1,7 +1,5 @@
 package com.csfrez.demo.java;
 
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 public class Java9Test {
@@ -9,12 +7,12 @@ public class Java9Test {
     //java9特性五：钻石操作符的升级
     public void test2(){
         //钻石操作符与匿名内部类在java8中不能共存，在java9可以。
-        Comparable<Object> comparable = new Comparable<>() {
+        /*Comparable<Object> comparable = new Comparable<>() {
             @Override
             public int compareTo(Object o) {
                 return 0;
             }
-        };
+        };*/
 
         // JDK7中的新特性：类型推断
         ArrayList<String> arrayList = new ArrayList<>();
@@ -59,6 +57,7 @@ public class Java9Test {
 
         //java9中资源关闭操作: 需要自动关闭的资源的实例化可以放在try的一对小括号外
         //此时的资源属性是常量，声明为final的，不可修改
+        /*
         InputStreamReader reader= new InputStreamReader(System.in);
         try(reader){
             char[] buf = new char[20];
@@ -69,7 +68,7 @@ public class Java9Test {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        }*/
 
 
     }

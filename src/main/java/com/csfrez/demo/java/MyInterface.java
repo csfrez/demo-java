@@ -11,11 +11,11 @@ public interface MyInterface {
 
     default void methodDefault(){
         System.out.println("我是接口中的默认方法");
-        methodPrivate();
+        //methodPrivate();
     }
 
     // JKD9中允许接口中定义私有的方法
-    private void methodPrivate(){
+    /*private void methodPrivate(){
         System.out.println("我是接口中的私有方法");
-    }
+    }*/
 }
